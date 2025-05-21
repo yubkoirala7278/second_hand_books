@@ -75,7 +75,7 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
                 <!-- Book Card 1 -->
                 <div class="col">
-                    <a href="/book-details/1" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/1" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f" class="card-img-top"
                                 alt="Introduction to Sociology" loading="lazy">
@@ -99,7 +99,7 @@
                 </div>
                 <!-- Book Card 2 -->
                 <div class="col">
-                    <a href="/book-details/2" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/2" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="card-img-top"
                                 alt="The Midnight Library" loading="lazy">
@@ -124,7 +124,7 @@
                 </div>
                 <!-- Book Card 3 -->
                 <div class="col">
-                    <a href="/book-details/3" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/3" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f" class="card-img-top"
                                 alt="Calculus Made Easy" loading="lazy">
@@ -149,7 +149,7 @@
                 </div>
                 <!-- Book Card 4 -->
                 <div class="col">
-                    <a href="/book-details/4" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/4" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="card-img-top"
                                 alt="Pride and Prejudice" loading="lazy">
@@ -174,7 +174,7 @@
                 </div>
                 <!-- Book Card 5 -->
                 <div class="col">
-                    <a href="/book-details/5" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/5" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f" class="card-img-top"
                                 alt="Physics for A Level" loading="lazy">
@@ -199,7 +199,7 @@
                 </div>
                 <!-- Book Card 6 -->
                 <div class="col">
-                    <a href="/book-details/6" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/6" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="card-img-top"
                                 alt="To Kill a Mockingbird" loading="lazy">
@@ -224,7 +224,7 @@
                 </div>
                 <!-- Book Card 7 -->
                 <div class="col">
-                    <a href="/book-details/7" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/7" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f" class="card-img-top"
                                 alt="Organic Chemistry" loading="lazy">
@@ -249,7 +249,7 @@
                 </div>
                 <!-- Book Card 8 -->
                 <div class="col">
-                    <a href="/book-details/8" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/8" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="card-img-top"
                                 alt="1984" loading="lazy">

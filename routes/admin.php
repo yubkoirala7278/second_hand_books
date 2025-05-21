@@ -3,4 +3,4 @@
 use App\Livewire\Admin\Home;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/home', Home::class);
+Route::get('/home', Home::class)->name('admin.home');

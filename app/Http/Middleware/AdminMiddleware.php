@@ -15,9 +15,14 @@ class AdminMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if(!auth()->check()){
-            return redirect()->route('login')->with('error','Please login to access this page');
+        if (!auth()->check()) {
+            return redirect()->route('login')->with('error', 'Please login to access this page');
         }
+
+        if (!auth()->user()->hasRole('admin')) {
+            return redirect()->route('home')->with('error', 'You do not have permission to access this page');
+        }
+
         return $next($request);
     }
 }

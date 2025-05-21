@@ -11,7 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Google Fonts: Lora & Open Sans -->
-     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('asset/frontend/style.css') }}">
 
@@ -20,40 +21,48 @@
 </head>
 
 <body>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container navbar-container">
-            <a class="navbar-brand" href="{{route('home')}}"><img
-                    src="https://sajhakitab.com/wp-content/uploads/2021/01/Untitled-1-1.png" alt="BookShelf Logo"
-                    class="img-fluid" style="max-height: 60px;" loading="lazy"></a>
+            <a class="navbar-brand" href="{{ route('home') }}">
+                <img src="https://sajhakitab.com/wp-content/uploads/2021/01/Untitled-1-1.png" alt="BookShelf Logo"
+                    class="img-fluid" style="max-height: 60px;" loading="lazy">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
-                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('home')}}">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}"
+                            href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('book')}}">Browse Books</a>
+                        <a class="nav-link {{ request()->routeIs('book') ? 'active' : '' }}"
+                            href="{{ route('book') }}">Buy Books</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/sell">Sell Books</a>
+                        <a class="nav-link {{ request()->routeIs('sell-book') ? 'active' : '' }}"
+                            href="{{ route('sell-book') }}">Sell Books</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about">About Us</a>
+                        <a class="nav-link {{ request()->routeIs('manage-books') ? 'active' : '' }}"
+                            href="{{ route('manage-books') }}">Manage Books</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-login ms-lg-3 px-3 py-2" href="/auth/google">Login</a>
+                        @livewire('login-component')
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-   {{-- content --}}
-   @yield('content')
+    {{-- content --}}
+    @yield('content')
+    @livewireScripts
+    @stack('scripts')
 
     <!-- Footer Section -->
     <footer class="footer-section py-5">
@@ -71,8 +80,7 @@
                     <div class="d-flex gap-3 mt-3">
                         <a href="#" class="social-icon" aria-label="Facebook"><i
                                 class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon" aria-label="Twitter"><i
-                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="social-icon" aria-label="Instagram"><i
                                 class="fab fa-instagram"></i></a>
                         <a href="#" class="social-icon" aria-label="LinkedIn"><i

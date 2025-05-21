@@ -43,31 +43,14 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- Thumbnail Carousel -->
-                    {{-- <div class="thumbnail-carousel splide mt-2" id="thumbnail-carousel">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f" alt="Thumbnail 1">
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794"
-                                        alt="Thumbnail 2">
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e" alt="Thumbnail 3">
-                                </li>
-                            </ul>
-                        </div>
-                    </div> --}}
                 </div>
                 <!-- Book Info -->
                 <div class="col-12 col-lg-7">
                     <h1 class="book-title mb-2" style="font-size: 2.25rem;">Introduction to Sociology</h1>
                     <p class="price mb-3">$25 <span class="text-muted fw-normal">(Used)</span></p>
                     <div class="d-flex flex-wrap gap-2 mb-3">
-                        <span class="category-badge">BACHELOR</span>
-                        <span class="category-badge">Textbook</span>
+                        <span class="category-badges">BACHELOR</span>
+                        <span class="category-badges">Textbook</span>
                     </div>
                     <div class="mb-4">
                         <p class="small text-muted mb-1"><i class="fas fa-map-marker-alt me-1"></i>New York, NY</p>
@@ -76,10 +59,10 @@
                     </div>
                     <!-- Action Buttons -->
                     <div class="d-flex flex-wrap gap-3 mb-4">
-                        <a href="/message/seller/123" class="btn btn-action"><i class="fas fa-envelope me-2"></i>Send
+                        <a href="/message/seller/123" class="btn btn-action text-white"><i class="fas fa-envelope me-2"></i>Send
                             Message</a>
-                        <a href="tel:+15551234567" class="btn btn-action"><i class="fas fa-phone-alt me-2"></i>Call Now</a>
-                        <button class="btn btn-secondary-action" disabled><i class="far fa-heart me-2"></i>Add to
+                        <a href="tel:+15551234567" class="btn btn-action text-white"><i class="fas fa-phone-alt me-2"></i>Call Now</a>
+                        <button class="btn btn-secondary-action"><i class="far fa-heart me-2"></i>Add to
                             Wishlist</button>
                     </div>
                     <!-- Share and Report -->
@@ -162,7 +145,7 @@
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
                         <!-- Book Card 1 -->
                         <div class="col">
-                            <a href="/book-details/1" class="card book-card h-100 text-decoration-none">
+                            <a href="/book_details/1" class="card book-card h-100 text-decoration-none">
                                 <div class="card-img-wrapper">
                                     <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f"
                                         class="card-img-top" alt="Introduction to Sociology" loading="lazy">
@@ -188,7 +171,7 @@
                         </div>
                         <!-- Book Card 2 -->
                         <div class="col">
-                            <a href="/book-details/2" class="card book-card h-100 text-decoration-none">
+                            <a href="/book_details/2" class="card book-card h-100 text-decoration-none">
                                 <div class="card-img-wrapper">
                                     <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794"
                                         class="card-img-top" alt="The Midnight Library" loading="lazy">
@@ -215,7 +198,7 @@
                         </div>
                         <!-- Book Card 3 -->
                         <div class="col">
-                            <a href="/book-details/3" class="card book-card h-100 text-decoration-none">
+                            <a href="/book_details/3" class="card book-card h-100 text-decoration-none">
                                 <div class="card-img-wrapper">
                                     <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f"
                                         class="card-img-top" alt="Calculus Made Easy" loading="lazy">
@@ -241,7 +224,7 @@
                         </div>
                         <!-- Book Card 4 -->
                         <div class="col">
-                            <a href="/book-details/4" class="card book-card h-100 text-decoration-none">
+                            <a href="/book_details/4" class="card book-card h-100 text-decoration-none">
                                 <div class="card-img-wrapper">
                                     <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794"
                                         class="card-img-top" alt="Pride and Prejudice" loading="lazy">
@@ -287,26 +270,6 @@
             pagination: true,
             gap: 10,
             height: '400px'
-        }).mount();
-
-        // Initialize Thumbnail Carousel
-        new Splide('#thumbnail-carousel', {
-            type: 'loop',
-            perPage: 3,
-            perMove: 1,
-            gap: 10,
-            pagination: false,
-            arrows: false,
-            fixedWidth: '100px',
-            fixedHeight: '80px',
-            isNavigation: true,
-            breakpoints: {
-                767: {
-                    perPage: 2,
-                    fixedWidth: '80px',
-                    fixedHeight: '60px'
-                }
-            }
         }).mount();
     </script>
 @endpush

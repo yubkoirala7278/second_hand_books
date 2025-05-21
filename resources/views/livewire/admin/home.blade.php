@@ -1,3 +1,3 @@
 <div>
-    This is admin Home page
+   @include('livewire.admin.index')
 </div>

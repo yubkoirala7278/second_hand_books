@@ -7,7 +7,7 @@
                 <h1>Buy and Sell Quality Books</h1>
                 <p>Discover a curated selection of second-hand textbooks, novels, and study materials. Join our
                     community to buy or sell with ease.</p>
-                <a href="/listings" class="btn btn-hero">Explore Books</a>
+                <a href="{{route('book')}}" class="btn btn-hero">Explore Books</a>
             </div>
             <div class="hero-form">
                 <h3>Find Your Book</h3>
@@ -53,7 +53,7 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
                 <!-- Book Card 1 -->
                 <div class="col">
-                    <a href="/book-details/1" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/1" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f" class="card-img-top"
                                 alt="Introduction to Sociology" loading="lazy">
@@ -77,7 +77,7 @@
                 </div>
                 <!-- Book Card 2 -->
                 <div class="col">
-                    <a href="/book-details/2" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/2" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="card-img-top"
                                 alt="The Midnight Library" loading="lazy">
@@ -101,7 +101,7 @@
                 </div>
                 <!-- Book Card 3 -->
                 <div class="col">
-                    <a href="/book-details/3" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/3" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f" class="card-img-top"
                                 alt="Calculus Made Easy" loading="lazy">
@@ -125,7 +125,7 @@
                 </div>
                 <!-- Book Card 4 -->
                 <div class="col">
-                    <a href="/book-details/4" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/4" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="card-img-top"
                                 alt="Pride and Prejudice" loading="lazy">
@@ -168,7 +168,7 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
                 <!-- Book Card 1 -->
                 <div class="col">
-                    <a href="/book-details/1" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/1" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f" class="card-img-top"
                                 alt="Introduction to Sociology" loading="lazy">
@@ -193,7 +193,7 @@
                 </div>
                 <!-- Book Card 2 -->
                 <div class="col">
-                    <a href="/book-details/2" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/2" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="card-img-top"
                                 alt="The Midnight Library" loading="lazy">
@@ -218,7 +218,7 @@
                 </div>
                 <!-- Book Card 3 -->
                 <div class="col">
-                    <a href="/book-details/3" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/3" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f" class="card-img-top"
                                 alt="Calculus Made Easy" loading="lazy">
@@ -243,7 +243,7 @@
                 </div>
                 <!-- Book Card 4 -->
                 <div class="col">
-                    <a href="/book-details/4" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/4" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="card-img-top"
                                 alt="Pride and Prejudice" loading="lazy">
@@ -286,7 +286,7 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
                 <!-- Book Card 1 -->
                 <div class="col">
-                    <a href="/book-details/1" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/1" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f" class="card-img-top"
                                 alt="Introduction to Sociology" loading="lazy">
@@ -311,7 +311,7 @@
                 </div>
                 <!-- Book Card 2 -->
                 <div class="col">
-                    <a href="/book-details/2" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/2" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="card-img-top"
                                 alt="The Midnight Library" loading="lazy">
@@ -336,7 +336,7 @@
                 </div>
                 <!-- Book Card 3 -->
                 <div class="col">
-                    <a href="/book-details/3" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/3" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f" class="card-img-top"
                                 alt="Calculus Made Easy" loading="lazy">
@@ -361,7 +361,7 @@
                 </div>
                 <!-- Book Card 4 -->
                 <div class="col">
-                    <a href="/book-details/4" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/4" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="card-img-top"
                                 alt="Pride and Prejudice" loading="lazy">
@@ -404,7 +404,7 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
                 <!-- Book Card 1 -->
                 <div class="col">
-                    <a href="/book-details/1" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/1" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f" class="card-img-top"
                                 alt="Introduction to Sociology" loading="lazy">
@@ -429,7 +429,7 @@
                 </div>
                 <!-- Book Card 2 -->
                 <div class="col">
-                    <a href="/book-details/2" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/2" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="card-img-top"
                                 alt="The Midnight Library" loading="lazy">
@@ -454,7 +454,7 @@
                 </div>
                 <!-- Book Card 3 -->
                 <div class="col">
-                    <a href="/book-details/3" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/3" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f" class="card-img-top"
                                 alt="Calculus Made Easy" loading="lazy">
@@ -479,7 +479,7 @@
                 </div>
                 <!-- Book Card 4 -->
                 <div class="col">
-                    <a href="/book-details/4" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/4" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="card-img-top"
                                 alt="Pride and Prejudice" loading="lazy">
@@ -522,7 +522,7 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
                 <!-- Book Card 1 -->
                 <div class="col">
-                    <a href="/book-details/1" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/1" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f" class="card-img-top"
                                 alt="Introduction to Sociology" loading="lazy">
@@ -547,7 +547,7 @@
                 </div>
                 <!-- Book Card 2 -->
                 <div class="col">
-                    <a href="/book-details/2" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/2" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="card-img-top"
                                 alt="The Midnight Library" loading="lazy">
@@ -572,7 +572,7 @@
                 </div>
                 <!-- Book Card 3 -->
                 <div class="col">
-                    <a href="/book-details/3" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/3" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f" class="card-img-top"
                                 alt="Calculus Made Easy" loading="lazy">
@@ -597,7 +597,7 @@
                 </div>
                 <!-- Book Card 4 -->
                 <div class="col">
-                    <a href="/book-details/4" class="card book-card h-100 text-decoration-none">
+                    <a href="/book_details/4" class="card book-card h-100 text-decoration-none">
                         <div class="card-img-wrapper">
                             <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="card-img-top"
                                 alt="Pride and Prejudice" loading="lazy">
@@ -619,6 +619,81 @@
                             </div>
                         </div>
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {{-- How it Works  --}}
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="heading-panel">
+                    <div class="col-12 text-center">
+                        <h2>How It <span>Works</span></h2>
+                        <p>Follow the steps as listed below to post your books into the website.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row position-relative">
+                <div class="col-md-4 col-sm-6 col-12 position-relative">
+                    <div class="main-section">
+                        <div class="how-it-icons-p4">
+                            <div class="how-it-work-p5">
+                                <i class="fas fa-users" aria-label="Create Account Icon"></i>
+                            </div>
+                        </div>
+                        <div class="how-it-p5">
+                            <h2>Create Account</h2>
+                            <p>First create your account which requires details (name, email, phone number, etc).</p>
+                        </div>
+                        <div class="count-timer">
+                            <p class="mb-0">01</p>
+                        </div>
+                    </div>
+                    <div class="curve-connector curve-connector-1" aria-hidden="true">
+                        <svg viewBox="0 0 200 100">
+                            <path d="M 10,50 Q 100,10 190,50" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 position-relative">
+                    <div class="main-section">
+                        <div class="how-it-icons-p4">
+                            <div class="how-it-work-p5">
+                                <i class="fas fa-book" aria-label="Post Your Books Icon"></i>
+                            </div>
+                        </div>
+                        <div class="how-it-p5">
+                            <h2>Post Your Books</h2>
+                            <p>Now you can post your books by adding the description of the book.</p>
+                        </div>
+                        <div class="count-timer">
+                            <p class="mb-0">02</p>
+                        </div>
+                    </div>
+                    <div class="curve-connector curve-connector-2" aria-hidden="true">
+                        <svg viewBox="0 0 200 100">
+                            <path d="M 10,50 Q 100,90 190,50" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="main-section">
+                        <div class="how-it-icons-p4">
+                            <div class="how-it-work-p5">
+                                <i class="fas fa-check-circle" aria-label="You're Done Icon"></i>
+                            </div>
+                        </div>
+                        <div class="how-it-p5">
+                            <h2>You're Done</h2>
+                            <p>Finally you are done. Your account is created and book is uploaded.</p>
+                        </div>
+                        <div class="count-timer">
+                            <p class="mb-0">03</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
