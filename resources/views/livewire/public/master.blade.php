@@ -10,6 +10,10 @@
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous">
     <!-- Google Fonts: Lora & Open Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500&display=swap"
         rel="stylesheet">
@@ -52,8 +56,21 @@
                             href="{{ route('manage-books') }}">Manage Books</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link position-relative d-flex align-items-center text-white rounded-2 btn-login"
+                            href="{{ route('chat') }}" >
+                            <i class="fas fa-comments me-1"></i>
+                            <span class="inbox-text d-none d-lg-inline">Inbox</span>
+                            <span
+                                class="badge bg-danger rounded-pill position-absolute top-0 start-100 translate-middle">
+                                99+
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         @livewire('login-component')
                     </li>
+
                 </ul>
             </div>
         </div>

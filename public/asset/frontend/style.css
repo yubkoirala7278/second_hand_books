@@ -527,7 +527,7 @@
 
         /* Footer Section */
         .footer-section {
-            background-color:var(--soft-ivory);
+            background-color: var(--soft-ivory);
             color: var(--charcoal-gray);
             position: relative;
             border-top: 4px solid var(--yellow);
@@ -1682,15 +1682,18 @@
         .btn-icon:hover {
             color: var(--primary);
         }
-        .btn-edits{
+
+        .btn-edits {
             color: #e1893c;
         }
-         .btn-status{
-            color:rgb(33, 93, 146);
-         }
-         .btn-delete{
+
+        .btn-status {
+            color: rgb(33, 93, 146);
+        }
+
+        .btn-delete {
             color: red;
-         }
+        }
 
         .btn-edits:hover {
             color: var(--golden-beige);
@@ -1704,7 +1707,7 @@
             color: var(--coral);
         }
 
-       
+
 
         .status-available {
             background-color: var(--secondary);
@@ -1750,9 +1753,12 @@
                 height: 40px;
             }
 
-         
+
 
             .btn-icon {
                 font-size: 1rem;
             }
         }
+
+        /* =========message navbar icon====== */
+      

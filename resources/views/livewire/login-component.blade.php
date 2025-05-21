@@ -16,7 +16,6 @@
         <a href="#" wire:click="openGoogleLoginPopup" class="nav-link btn btn-login px-3 py-2" wire:loading.attr="disabled">
             <i class="fab fa-google me-2"></i>
             <span wire:loading.remove>Login with Google</span>
-            <span wire:loading>Loading...</span>
         </a>
     @endif
 
