@@ -18,7 +18,7 @@ require __DIR__ . '/public.php';
 // =======End of Public===============
 
 // =========Admin============
-Route::middleware(['auth.admin'])->group(function () {
+Route::middleware(['auth.admin'])->name('admin.')->group(function () {
     Route::prefix('admin')->group(function () {
         require __DIR__ . '/admin.php';
     });

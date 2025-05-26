@@ -2,106 +2,127 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BookSwap Admin Dashboard - Efficiently manage books, users, and sales.">
-    <meta name="author" content="BookSwap Team">
-    <title>Admin Dashboard - BookSwap</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Font Awesome CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous">
-    <!-- ApexCharts CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/apexcharts@3.41.0/dist/apexcharts.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('asset/backend/style.css') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laravel Shop :: Administrative Panel</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{{asset('css/adminlte.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/custom.css')}}">
 </head>
 
-<body class="d-flex">
-    <!-- Sidebar -->
-    <nav id="sidebar" class="sidebar bg-white shadow-sm">
-        <div class="sidebar-header p-3 bg-primary text-white">
-            <h5 class="fw-bold m-0 d-flex align-items-center">
-                <span class="sidebar-title"><img
-                        src="https://sajhakitab.com/wp-content/uploads/2021/01/Untitled-1-1.png" alt=""
-                        height="40"></span>
-            </h5>
-        </div>
-        <ul class="nav flex-column p-3">
-            <li class="nav-item">
-                <a href="" class="nav-link active">
-                    <i class="fas fa-home me-2"></i>
-                    <span class="nav-text">Dashboard</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link">
-                    <i class="fas fa-book me-2"></i>
-                    <span class="nav-text">Manage Books</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link">
-                    <i class="fas fa-users me-2"></i>
-                    <span class="nav-text">Manage Users</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link">
-                    <i class="fas fa-chart-bar me-2"></i>
-                    <span class="nav-text">Reports</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Main Content -->
-    <div class="main-contents">
+<body class="hold-transition sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
-            <div class="container-fluid">
-                <a class="navbar-brand fw-bold" href="">BookSwap Admin</a>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav align-items-center">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-user-circle me-2"></i> Admin
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Right navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i
+                            class="fas fa-bars"></i></a>
+                </li>
+            </ul>
+            <div class="navbar-nav pl-2">
+            </div>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link p-0 pr-3" data-toggle="dropdown" href="#">
+                        <img src="/img/avatar5.png" class='img-circle elevation-2' width="40" height="40"
+                            alt="">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-3">
+                        <h4 class="h4 mb-0"><strong>Mohit Singh</strong></h4>
+                        <div class="mb-3">example@example.com</div>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-user-cog mr-2"></i> Settings
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-lock mr-2"></i> Change Password
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item text-danger">
+                            <i class="fas fa-sign-out-alt mr-2"></i> Logout
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-link">
+                <img src="/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                    style="opacity: .8">
+                <span class="brand-text font-weight-light">LARAVEL SHOP</span>
+            </a>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user (optional) -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <li class="nav-item">
+                            <a href="{{route('admin.home')}}" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Dashboard</p>
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" href=""><i class="fas fa-user me-2"></i> Profile</a>
-                                </li>
-                                <li>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                        style="display: inline;">
-                                        @csrf
-                                        <a class="dropdown-item" href="javascript:void(0)"
-                                            onclick="document.getElementById('logout-form').submit();">
-                                            <i class="fas fa-sign-out-alt me-2"></i> Logout
-                                        </a>
-                                    </form>
-                                </li>
-                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('admin.category')}}" class="nav-link">
+                                <i class="nav-icon fas fa-file-alt"></i>
+                                <p>Manage Category</p>
+                            </a>
                         </li>
                     </ul>
-                </div>
+                </nav>
+                <!-- /.sidebar-menu -->
             </div>
-        </nav>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Main content -->
+            <section class="content">
+                <!-- Default box -->
+                <div class="container-fluid">
+                    @yield('content')
+                    @yield('modal')
+                </div>
+                <!-- /.card -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
 
-        <!-- Page Content -->
-        <main class="py-4">
-            @yield('content')
-            @yield('modal')
-        </main>
+            <strong>Copyright &copy; 2014-2022 AmazingShop All rights reserved.
+        </footer>
+
     </div>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+    <!-- ./wrapper -->
+    <!-- jQuery -->
+    <script src="/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="/js/demo.js"></script>
+    {{-- custom js --}}
     @stack('script')
 </body>
 

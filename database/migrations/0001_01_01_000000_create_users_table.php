@@ -19,6 +19,9 @@ return new class extends Migration
             $table->string('password');
             $table->string('google_id')->nullable()->unique();
             $table->string('profile_image')->nullable();
+            $table->string('mobile_number')->nullable();
+            $table->string('address')->nullable();
+            $table->string('map_link')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
